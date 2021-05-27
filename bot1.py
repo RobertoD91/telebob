@@ -43,6 +43,9 @@ def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
 
+def bestia_command(update: Update, _: CallbackContext) -> None:
+    """Send a message when the command /help is issued."""
+    update.message.reply_text('SEI UNA BESTIA!')
 
 def echo(update: Update, _: CallbackContext) -> None:
     """Echo the user message."""
@@ -52,7 +55,7 @@ def echo(update: Update, _: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("TOKEN")
+    updater = Updater("1848261072:AAFAr_t1JMc4lpOX8pz_RusgfHSxMnOXW0M")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
@@ -60,6 +63,7 @@ def main() -> None:
     # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("help", help_command))
+    dispatcher.add_handler(CommandHandler("bestia", bestia_command))
 
     # on non command i.e message - echo the message on Telegram
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
