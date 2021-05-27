@@ -1,5 +1,8 @@
 # Tele Bob
 
+NB: NON bisogna forkare questa repo, piuttosto https://github.com/Cyber-HackAdemy-UniNa/telebob :)
+
+
 Bot di test per la Cyber HackAdemy da forkare
 
 Per installare:
