@@ -47,7 +47,7 @@ def help_command(update: Update, _: CallbackContext) -> None:
     update.message.reply_text('Help!')
 
 def bestia_command(update: Update, _: CallbackContext) -> None:
-    """Send a message when the command /help is issued."""
+    """SEI UNA BESTIA!"""
     update.message.reply_text('SEI UNA BESTIA!')
 
 def echo(update: Update, _: CallbackContext) -> None:
